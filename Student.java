@@ -14,6 +14,7 @@ public class Student {
 		}
 	}
 	
+	//é€šè¿‡åˆ†æ•°æ‰¾äºº
 	static void  outNameByScore (Student[] stu, int count ,double score)
 	{
 		int flag = 0;
@@ -26,9 +27,11 @@ public class Student {
 			}
 		}
 		if (flag == 0) {
-			System.out.println("ÎÞ´ËÑ§Éú");
+			System.out.println("æ— æ­¤å­¦ç”Ÿ");
 		}
 	}
+	
+	//è¾“å‡ºæœ€é«˜æœ€ä½Žåˆ†
 	static void printMost(Student[] stus, int count)
 	{
 		low = hight = stus[0].score;
@@ -41,7 +44,7 @@ public class Student {
 				low = stus[i].getScore();
 			}
 		}
-		System.out.println("×î¸ß·Ö£º");
+		System.out.println("æœ€é«˜åˆ†ï¼š");
 		for (int i = 0; i < count ; ++ i)
 		{
 			
@@ -51,7 +54,7 @@ public class Student {
 			}
 		}
 		
-		System.out.println("×îµÍ·Ö£º");
+		System.out.println("æœ€ä½Žåˆ†ï¼š");
 		for (int i = 0; i < count ; ++ i)
 		{
 			
@@ -61,25 +64,29 @@ public class Student {
 			}
 		}
 	}
+	//åå­—çš„setter
 	public void setName (String _name) 
 	{
 		if (_name.length() == 0){
-			System.out.println("ÊäÈëÁË¿ÕÃû×Ö");
+			System.out.println("è¾“å…¥äº†ç©ºåå­—");
 		}
 		this.name = _name;
 	}
+	//åˆ†æ•°çš„getter
 	public double getScore()
 	{
 		return this.score;
 	}
+	//åå­—çš„getter
 	public String getName ()
 	{
 		return this.name;
 	}
+	//åˆ†æ•°çš„setter
 	public void setScore (double _score)
 	{
 		if (_score < 0) {
-			System.out.println("ÊäÈëÁË²»ºÏ·¨µÄ·ÖÊý");
+			System.out.println("è¾“å…¥äº†ä¸åˆæ³•çš„åˆ†æ•°");
 		}
 		this.score = _score;
 	}
