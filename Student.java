@@ -14,9 +14,15 @@ public class Student {
 		}
 	}
 	
-	public String  getNameByScore (double socre)
+	public void  outNameByScore (Student[] stus, int count ,double socre)
 	{
-		for 
+		for (int i = 0; i < count ; ++ i)
+		{
+			if (stus[i].getScore() == score)
+			{
+				System.out.println(stus[i].getName());
+			}
+		}
 	}
 	static void printMost(Student[] stus, int count)
 	{
@@ -30,7 +36,7 @@ public class Student {
 				low = stus[i].getScore();
 			}
 		}
-		System.out.println("×î¸ß·Ö£º");
+		System.out.println("æœ€é«˜åˆ†ï¼š");
 		for (int i = 0; i < count ; ++ i)
 		{
 			
@@ -40,7 +46,7 @@ public class Student {
 			}
 		}
 		
-		System.out.println("×îµÍ·Ö£º");
+		System.out.println("æœ€ä½Žåˆ†ï¼š");
 		for (int i = 0; i < count ; ++ i)
 		{
 			
@@ -53,7 +59,7 @@ public class Student {
 	public void setName (String _name) 
 	{
 		if (_name.length() == 0){
-			System.out.println("ÊäÈëÁË¿ÕÃû×Ö");
+			System.out.println("è¾“å…¥äº†ç©ºåå­—");
 		}
 		this.name = _name;
 	}
@@ -68,7 +74,7 @@ public class Student {
 	public void setScore (double _score)
 	{
 		if (_score < 0) {
-			System.out.println("ÊäÈëÁË²»ºÏ·¨µÄ·ÖÊý");
+			System.out.println("è¾“å…¥äº†ä¸åˆæ³•çš„åˆ†æ•°");
 		}
 		this.score = _score;
 	}
